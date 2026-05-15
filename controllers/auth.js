@@ -9,6 +9,7 @@ const register = async (req, res) => {
             data: result
         });
     } catch (err) {
+        console.log(process.env.DB_USER);
         console.log(err);
         return res.json({
             result: false,
